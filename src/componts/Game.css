@@ -1,0 +1,113 @@
+.container {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container-game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.jogo {
+  flex: 1;
+  max-width: 600px;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.mesa-dados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.dado {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.botao-girar {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ;
+}
+
+.botao-girar:hover {
+  background: #022242;
+}
+
+.historico {
+  flex: 1;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+
+
+.rodadaTitulo {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.rodadaTitulo p {
+  font-weight: bold;
+ 
+}
+
+
+/* Novos estilos para o input e container de controles */
+.controles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.entrada-num-dados {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  width: 80px;
+  text-align: center;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.entrada-num-dados:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 8px rgba(0, 91, 187, 0.5);
+}
